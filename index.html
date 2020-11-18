@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="viewport">
+        <!-- 左边部分 -->
+        <div class="left panel">
+            <div class="inner">
+                <div class="text">
+                    <span>姓名</span><input type="text" id="name">
+                    <span>评分</span><input type="text" id="number">
+                    <span>薪资</span><input type="text" id="money">
+                    <button>新增</button>
+                </div>
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <td class="name">姓名</td>
+                            <td class="number">评分</td>
+                            <td class="money">薪资(单位:万)</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>新用户</td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td><img src="./images/del.png" alt="" id="img"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <!-- 右边部分 -->
+        <div class="right">
+            <!-- 柱状图 -->
+            <div class="top panel">
+                <div class="inner">
+                    <h3>评分图示</h3>
+                    <div class="chart">
+                        <div id="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 折线图 -->
+            <div class="bottom panel">
+                <div class="inner">
+                    <h3>薪资图示</h3>
+                    <div class="chart">
+                        <div id="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

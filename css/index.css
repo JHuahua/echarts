@@ -1,0 +1,128 @@
+/* 基础布局 */
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 14px;
+  min-width: 1280px;
+  color: #fff;
+  background: url(../images/bg.jpg) no-repeat 0 0 / cover;
+}
+input {
+  outline: 0;
+  border: 0;
+}
+h4,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.viewport {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+}
+.left {
+  flex: 1;
+  height: 629px;
+  margin-right: 8px;
+}
+.right {
+  width: 500px;
+}
+/* 面板样式 ----------------------------------------------------------------*/
+.panel {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-width: 51px 38px 21px 132px;
+  border-image: url(../images/border.png) 51 38 21 132;
+  position: relative;
+}
+.panel .inner {
+  position: absolute;
+  top: -51px;
+  right: -38px;
+  bottom: -21px;
+  left: -132px;
+  padding: 24px 20px;
+}
+.panel h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+.left .text span {
+  font-weight: 700;
+}
+.left .text input[type="text"] {
+  width: 160px;
+  height: 33px;
+  border-radius: 5px;
+  margin: 0 20px 0 12px;
+  margin-bottom: 10px;
+}
+.left .text #money {
+  margin-right: 10px;
+}
+.left .text button {
+  width: 105px;
+  height: 33px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.left table {
+  width: 100%;
+  text-align: center;
+}
+.left table thead {
+  background-color: #1e92ff;
+  font-weight: 700;
+}
+.left table thead tr {
+  height: 30px;
+}
+.left table thead tr td {
+  width: 25%;
+  border-right: 1px solid #000;
+}
+.left table tbody tr {
+  height: 30px;
+}
+.left table tbody tr td {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.left table tbody tr td:last-child {
+  border-right: 0;
+}
+.left table tbody tr td:last-child img {
+  width: 20px;
+}
+.right .top {
+  height: 310px;
+  margin-bottom: 8px;
+}
+.right .top .chart {
+  height: 100%;
+}
+.right .top .chart #bar {
+  width: 460px;
+  height: 100%;
+}
+.right .bottom {
+  height: 310px;
+}
+.right .bottom .chart {
+  height: 100%;
+}
+.right .bottom .chart #line {
+  height: 100%;
+  width: 460px;
+}
